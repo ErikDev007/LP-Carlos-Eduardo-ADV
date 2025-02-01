@@ -7,14 +7,14 @@ const HeaderWrapper = styled.header`
   top: 0;
   background: #111217;
   color: white;
-  padding: 23px 20px;
+  padding: 23px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 1000;
 
   @media (max-width: 768px) {
-    padding: 15px;
+    padding: 30px;
   }
 `;
 
@@ -50,7 +50,6 @@ const NavLinks = styled.ul`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
     gap: 10px;
     align-items: center;
     text-align: center;
