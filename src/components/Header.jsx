@@ -14,7 +14,6 @@ const HeaderWrapper = styled.header`
   z-index: 1000;
 
   @media (max-width: 768px) {
-    flex-direction: column;
     padding: 15px;
   }
 `;

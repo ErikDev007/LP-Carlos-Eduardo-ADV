@@ -9,11 +9,6 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
-  }
 `;
 
 const ContactInfo = styled.div`
