@@ -9,17 +9,32 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const ContactInfo = styled.div`
   max-width: 50%;
+
   & p {
     margin: 8px 0;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 `;
 
 const MapWrapper = styled.div`
   max-width: 45%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const Iframe = styled.iframe`
@@ -36,6 +51,7 @@ const Credits = styled.div`
   margin-top: 20px;
   font-size: 14px;
   opacity: 0.8;
+  
   & a {
     color: inherit;
   }

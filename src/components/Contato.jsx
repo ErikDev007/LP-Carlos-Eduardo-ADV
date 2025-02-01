@@ -13,6 +13,7 @@ const ContactButtons = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  flex-wrap: wrap;
 `;
 
 const ContactButton = styled.a`
@@ -23,7 +24,9 @@ const ContactButton = styled.a`
   color: #ffffff;
   font-weight: bold;
   transition: background 0.3s;
-  
+  text-align: center;
+  min-width: 120px;
+
   &:nth-child(1) {
     background: #25D366;
   }
@@ -50,6 +53,10 @@ const FormWrapper = styled.div`
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 600px) {
+    padding: 15px;
+  }
 `;
 
 const Form = styled.form`
@@ -63,6 +70,10 @@ const Input = styled.input`
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const Textarea = styled.textarea`
@@ -72,6 +83,10 @@ const Textarea = styled.textarea`
   border-radius: 5px;
   font-size: 1rem;
   resize: none;
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const SubmitButton = styled.button`
@@ -86,6 +101,11 @@ const SubmitButton = styled.button`
 
   &:hover {
     background: #0056b3;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+    padding: 10px;
   }
 `;
 

@@ -9,13 +9,22 @@ const HeaderWrapper = styled.header`
   color: white;
   padding: 23px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 1000;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 15px;
+  }
 `;
 
 const Logo = styled.img`
   height: 50px;
+
+  @media (max-width: 768px) {
+    height: 40px;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -39,6 +48,13 @@ const NavLinks = styled.ul`
 
   & a:hover {
     color: #f8b400;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
   }
 `;
 

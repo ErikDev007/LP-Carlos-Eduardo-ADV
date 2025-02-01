@@ -11,14 +11,27 @@ const SectionWrapper = styled.section`
   & h2 {
     color: #ffffff;
     margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    & h2 {
+      font-size: 1.8rem;
+    }
   }
 `;
 
 const CardsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   margin-top: 20px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Card = styled.div`
@@ -27,6 +40,11 @@ const Card = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   & img {
     width: 100%;
@@ -39,11 +57,22 @@ const Card = styled.div`
   & h3 {
     margin-bottom: 10px;
     color: #ffffff;
+    font-size: 1.5rem;
   }
 
   & p {
     font-size: 1rem;
     color: #ffffff;
+  }
+
+  @media (max-width: 768px) {
+    & h3 {
+      font-size: 1.3rem;
+    }
+
+    & p {
+      font-size: 0.9rem;
+    }
   }
 `;
 
